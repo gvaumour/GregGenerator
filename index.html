@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title> The Greg Generator </title>
+ <script type="text/javascript">
+
+	var contenu= ["<div id=\"truc\"> <audio controls> <source src=\"1.mp3\" type=\"audio/mp3\"> </audio> </div>" ,
+				, "<div id=\"truc\"> Congratulations to you, Romain and Gayoung ! My best wishes and the best of luck for the future please. </div>"];
+
+	function doFunction()
+	{
+		alert('LOLZ');
+		var index Math.floor(Math.random() * 6) + 1 
+		var elem = document.getElementById('truc');
+		if(elem != null)
+		{
+			elem.parentNode.removeChild(elem);			
+		}
+		$('body').append(contenu[0]);
+	}
+				
+ </script>
+ 
+</head>
+
+<body>
+
+<div id="stay"> 
+<input id="clickMe" type="button" value="clickme" onclick="doFunction();" />
+</div>
+
+</body>
+</html>
